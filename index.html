@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box icon usage as font-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Externla Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Link Javascript -->
+        <script src="Script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+            <div class="box" id="Box">
+                <form action="success.html" id="loginForm" autocomplete="off">
+                    <div class="heading">
+                        <h2>Log In</h2>
+                    </div>
+
+                    <div class="inputArea">
+                        <input type="text" id="loginInputEmail" required >
+                        <label for="email">Email</label>
+                        <i class='bx bx-envelope'></i>
+                        <span class="error_msg" id="loginEmailError"></span>
+                    </div>
+
+                    <div class="inputArea">
+                        <input type="password" id="loginInputPassword" required >
+                        <label for="password">Password</label>
+                        <i class='bx bx-lock-alt'></i>
+                        <span class="error_msg" id="loginPasswordError"></span>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Log in" id="loginButton">
+                    </div>
+
+                    <div class="signup-forgot">
+                        <p>Don't have account? <a href="#" id="signUpHyper">Sign Up</a></p>
+                        <p><a href="#" id="forgotHyper">Forgot Password ?</a></p>
+                    </div>
+                </form>
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+                <form action="#" id="signupForm" autocomplete="off">
+                    <div class="heading">
+                        <h2>Sign Up</h2>
+                    </div>
+
+                    <div class="inputArea">
+                        <input type="text"  id="signupInputName" required >
+                        <label for="name">Full Name</label>
+                        <i class='bx bx-envelope'></i>
+                        <span class="error_msg" id="signupNameError"></span>
+                    </div>
+
+                    <div class="inputArea">
+                        <input type="text"  id="signupInputEmail" required >
+                        <label for="email">Email</label>
+                        <i class='bx bx-envelope'></i>
+                        <span class="error_msg" id="signupEmailError"></span>
+                    </div>
+
+                    <div class="inputArea">
+                        <input type="password"  id="signupInputPassword" required >
+                        <label for="password">Password</label>
+                        <i class='bx bx-lock-alt'></i>
+                        <span class="error_msg" id="signupPasswordError"></span>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Sign Up" id="signupButton">
+                    </div>
+
+                    <div class="signup-forgot">
+                        <p id="signup">Already have account? <a href="#" id="loginHyper">Log In</a></p>
+                    </div>
+                </form>
+
+            </div> <!-- Box -->
+    </div> <!-- Container -->
+
+
+
+</body>
+
+</html>
